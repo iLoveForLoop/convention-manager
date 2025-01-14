@@ -4,11 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\User;
 
-class Personl_Info extends Model
+class PersonalInfo extends Model
 {
-    /** @use HasFactory<\Database\Factories\PersonlInfoFactory> */
+    /** @use HasFactory<\Database\Factories\PersonalInfoFactory> */
     use HasFactory;
 
     protected $guarded = [];

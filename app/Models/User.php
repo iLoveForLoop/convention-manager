@@ -6,8 +6,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Models\Convention;
 use App\Models\PersonalInfo;
-use App\Models\Conventions;
 
 class User extends Authenticatable
 {
@@ -53,6 +53,6 @@ class User extends Authenticatable
     }
 
     public function conventions(){
-        return $this->hasMany(Conventions::class);
+        return $this->hasMany(Convention::class);
     }
 }

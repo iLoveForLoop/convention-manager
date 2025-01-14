@@ -12,6 +12,6 @@ class ConventionSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        \App\Models\Convention::factory(10)->create();
     }
 }
